@@ -35,7 +35,7 @@ void linego(){
     int dx, dy;
     float r;
     int temp;
-    
+
     while(1){
 
         re = 0;
@@ -58,15 +58,16 @@ void linego(){
             x2 = atoi(nx2);
             y2 = atoi(ny2);
         
-        for (i = 0; i < 25; i++) {
-            recvall[i] = '\0';
         
-        }
         for (i = 0; i < 4; i++) {
             nx1[i] = '\0';
             ny1[i] = '\0';
             nx2[i] = '\0';
             ny2[i] = '\0';
+        }
+        for (i = 0; i < 25; i++) {
+            recvall[i] = '\0';
+        
         }
 
         if (y1 > y2) {
