@@ -132,14 +132,14 @@ void linego(){
                     car.turn(-100, 1);
                     ThisThread::sleep_for(450ms);
                     task = 1;
-                    sprintf(buff, "end 2\r\n");
+                    sprintf(buff, "end1\r\n");
                     xbee.write(buff, 7);
 
                 } 
 
                 else if (task == 1){
                     car.stop();
-                    sprintf(buff, "end all\r\n");
+                    sprintf(buff, "end2\r\n");
                     xbee.write(buff, 9);
                     task++;
                 }
